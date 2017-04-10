@@ -1,4 +1,9 @@
 function DataStore() {
-  console.log('ejecutando el constructor DataStore');
   this.data = {};
+
+  // not efficient
+  // mention prototypes
+  this.add = function (key, val) {
+    this.data[key] = val;
+  };
 }
