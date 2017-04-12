@@ -2,7 +2,7 @@
   'use strict';
 
   var App = window.App;
-  var Order = App.Order;
+  var PizzaOrder = App.PizzaOrder;
   var Store = App.Store;
   var DataStore = App.DataStore;
 
@@ -10,7 +10,7 @@
   var myStore = new Store('ncc-1701', new DataStore());
   window.myStore = myStore;
 
-  var order = new Order('enrique@devcode.com', 'large', 'cheese');
+  var order = new PizzaOrder('enrique@devcode.com', 'large', 'cheese');
   myStore.createOrder(order);
   myStore.printOrders();
 
