@@ -11,6 +11,7 @@
   window.myStore = myStore;
 
   var order = new PizzaOrder('enrique@devcode.com', 'large', 'cheese');
+  order.displayOrder(); // inherited method
   myStore.createOrder(order);
   myStore.printOrders();
 
