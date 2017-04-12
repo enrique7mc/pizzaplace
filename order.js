@@ -36,6 +36,14 @@
     console.log('Size: ' + this.size);
   };
 
+  // call and bind examples
+  var obj = { email: 'example@devcode.com' };
+  var obj2 = { email: 'example2@devcode.com' };
+
+  BaseOrder.prototype.displayOrder.call(obj);
+  var displayEmail = BaseOrder.prototype.displayOrder.bind(obj2);
+  displayEmail();
+
   App.PizzaOrder = PizzaOrder;
   window.App = App;
 })(window);
