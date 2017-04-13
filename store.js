@@ -2,6 +2,8 @@
   'use strict';
   var App = window.App || {};
 
+  // Explain what happens during object construction
+  // and the new operator
   function Store(storeId, db) {
     this.storeId = storeId;
     this.db = db; // composition
