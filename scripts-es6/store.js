@@ -17,7 +17,7 @@ class Store {
   printOrders() {
     const customerIdArray = Object.keys(this.db.getAll());
 
-    console.log(`Store #${this.StoreId} has pending orders:`);
+    console.log(`Store #${this.storeId} has pending orders:`);
     customerIdArray.forEach((id) => {
       console.log(this.db.get(id));
     });
