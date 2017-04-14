@@ -9,6 +9,7 @@ const order = new PizzaOrder({
   size: 'large',
   speciality: 'cheese'
 });
+order.displayOrder();
 myStore.createOrder(order);
 myStore.printOrders();
 myStore.deliverOrder('enrique@devcode.com');
